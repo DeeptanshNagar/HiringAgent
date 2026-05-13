@@ -1,0 +1,54 @@
+Senior Full-Stack Software Engineer — FinTech
+
+Company: TechFinance Solutions Ltd.
+Location: London, UK (Hybrid — 3 days on-site)
+Employment Type: Full-time, Permanent
+
+About Us:
+TechFinance Solutions is a leading FinTech company building next-generation payment processing platforms. We serve over 2 million customers across Europe, handling £500M+ in transactions monthly. Our engineering team of 50+ developers values clean code, continuous learning, and collaborative problem-solving.
+
+Role Overview:
+We are seeking a Senior Full-Stack Software Engineer to lead the development of our new real-time payment settlement system. You will work across the entire stack — from responsive frontends to high-throughput backend services — collaborating with product managers, designers, and other engineers in an agile environment.
+
+Required Skills:
+- 5+ years of professional software engineering experience
+- Expert-level proficiency in Python (Django/Flask) or Node.js (Express/NestJS)
+- Strong experience with React.js or Vue.js for frontend development
+- Experience with PostgreSQL, Redis, and message queues (RabbitMQ, Kafka)
+- Proficiency with Docker, Kubernetes, and CI/CD pipelines (GitHub Actions, Jenkins)
+- Solid understanding of RESTful API design and GraphQL
+- Experience with AWS or Azure cloud services (EC2, S3, Lambda, RDS)
+- Strong knowledge of software engineering best practices: unit testing, integration testing, code reviews
+- Bachelor's degree in Computer Science, Software Engineering, or equivalent experience
+- Experience working in the FinTech, banking, or financial services domain
+
+Preferred Skills:
+- Experience with microservices architecture and event-driven systems
+- Knowledge of payment protocols (ISO 20022, SWIFT, SEPA)
+- Familiarity with regulatory compliance (PCI DSS, GDPR, PSD2)
+- Experience with TypeScript and modern frontend tooling (Webpack, Vite)
+- Contributions to open-source projects
+- Master's degree in a technical field
+- AWS or Azure cloud certifications
+- Experience with Elasticsearch and log aggregation (ELK stack)
+
+Key Responsibilities:
+1. Design, build, and maintain scalable full-stack applications serving millions of users
+2. Lead technical design discussions and architecture decisions for new features
+3. Write clean, maintainable, well-tested code (80%+ test coverage expected)
+4. Mentor junior and mid-level engineers through pair programming and code reviews
+5. Collaborate with cross-functional teams to deliver features from conception to production
+6. Optimise application performance and troubleshoot production issues
+7. Participate in on-call rotation (1 week per month)
+8. Contribute to technical documentation and engineering blog posts
+9. Stay current with emerging technologies and propose improvements to the tech stack
+10. Ensure security best practices are followed in all code and infrastructure
+
+Seniority Level: Senior (IC4 — Senior Engineer)
+
+What We Offer:
+- Competitive salary: £80,000 — £110,000 DOE
+- Stock options and annual bonus
+- Private health insurance and pension
+- £2,000 annual learning budget
+- Flexible working hours and hybrid arrangement

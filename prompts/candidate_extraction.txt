@@ -1,0 +1,51 @@
+SYSTEM: You are a resume parser. Extract structured candidate data from the provided resume or LinkedIn profile text. Return ONLY valid JSON. No markdown code fences. No commentary before or after. Do not invent information not present in the text.
+
+USER: Extract from this resume/LinkedIn profile the following structured data. Return ONLY a JSON object matching this exact schema:
+
+{
+    "candidate_name": "string - Full name of the candidate",
+    "email": "string or null - Email address if found",
+    "phone": "string or null - Phone number if found",
+    "current_role": "string or null - Current/most recent job title",
+    "years_of_experience": number - Total years of professional experience (estimate if ranges given, null if unclear),
+    "experience_domain": "string - Primary industry/domain (e.g. fintech, healthcare, SaaS, e-commerce, null if unclear)",
+    "skills": ["list of ALL technical and soft skills mentioned - be thorough"],
+    "work_history": [
+        {
+            "company": "string - Company name",
+            "role": "string - Job title at this company",
+            "duration_months": number - Duration in months (estimate if given as years, null if unclear),
+            "domain": "string - Industry/domain of this role",
+            "responsibilities_summary": "string - Brief summary of responsibilities and achievements"
+        }
+    ],
+    "education": [
+        {
+            "degree": "string - Degree earned (e.g. Bachelor of Science, MBA)",
+            "field": "string - Field of study (e.g. Computer Science, Business Administration)",
+            "institution": "string - University or institution name",
+            "year": number - Graduation year or null
+        }
+    ],
+    "certifications": ["list of certifications or empty array"],
+    "projects": [
+        {
+            "title": "string - Project name",
+            "description": "string - Brief description of the project and candidate's role",
+            "technologies": ["list of technologies used"],
+            "relevance_hint": "string - Brief note on how this project relates to professional work"
+        }
+    ],
+    "communication_quality_signals": "string - Describe the writing clarity, grammar, structure based on the resume text itself. Note if there are typos, poor formatting, or unclear descriptions."
+}
+
+IMPORTANT RULES:
+- Extract information EXACTLY as stated. Do not infer or assume skills not mentioned.
+- If a field cannot be determined from the text, use null for strings/numbers and [] for lists.
+- For duration_months, convert date ranges to approximate months (e.g. "2020-2022" -> 24).
+- Normalize skill names to standard forms (e.g. "React.js" -> "React", "AWS Lambda" -> "Lambda").
+- communication_quality_signals should assess the resume's writing quality, not the candidate's personality.
+- Return ONLY the JSON object. No markdown. No extra text.
+
+Resume/Profile Text:
+{candidate_text}

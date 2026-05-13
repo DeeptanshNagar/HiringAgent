@@ -1,0 +1,42 @@
+venv/
+ENV/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Secrets
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated data (mounted as volumes instead)
+output/
+logs/
+cache/
+
+# Git
+.git/
+.gitignore
+
+# Tests & CI
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# Docs
+*.md
+presentation.html

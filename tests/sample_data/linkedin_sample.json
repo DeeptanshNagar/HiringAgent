@@ -1,0 +1,113 @@
+{
+  "Profile": {
+    "First Name": "Priya",
+    "Last Name": "Patel",
+    "Maiden Name": null,
+    "Address": null,
+    "Birth Date": null,
+    "Headline": "Senior Software Engineer | FinTech | Python | React | AWS",
+    "Summary": "Senior Software Engineer with 6 years of experience building scalable financial technology solutions. Expert in Python/Django, React.js, and cloud infrastructure on AWS. Led development of payment processing systems at two FinTech startups. Passionate about clean code, system design, and mentoring junior engineers. Strong track record of delivering high-impact projects in agile environments.",
+    "Industry": "Financial Technology",
+    "Zip Code": null,
+    "Geo Location": "London Area",
+    "Twitter Handles": null,
+    "Websites": ["https://github.com/priyapatel", "https://priyapatel.dev"],
+    "Instant Messengers": null
+  },
+  "Positions": [
+    {
+      "Company Name": "PayStream Technologies",
+      "Title": "Senior Software Engineer",
+      "Description": "Lead engineer for real-time payment settlement platform. Architected microservices handling £150M+ in annual transactions. Built with Python/Django, React, PostgreSQL, Redis, Kafka. Managed team of 3 engineers. Implemented PCI DSS compliant payment flows. Reduced system latency by 45% through caching and query optimization.",
+      "Location": "London, United Kingdom",
+      "Started On": "Mar 2021",
+      "Finished On": null
+    },
+    {
+      "Company Name": "FinVenture Labs",
+      "Title": "Software Engineer",
+      "Description": "Full-stack developer for mobile banking application. Built REST APIs with Django REST Framework. Developed React Native mobile app features. Integrated with banking core systems via SOAP APIs. Implemented SEPA and Faster Payments support.",
+      "Location": "London, United Kingdom",
+      "Started On": "Jun 2019",
+      "Finished On": "Feb 2021"
+    },
+    {
+      "Company Name": "TechStart Inc",
+      "Title": "Junior Developer",
+      "Description": "Built web applications with Python/Flask and JavaScript. Implemented user authentication, database models, and REST endpoints. Participated in code reviews and agile ceremonies.",
+      "Location": "London, United Kingdom",
+      "Started On": "Jul 2018",
+      "Finished On": "May 2019"
+    }
+  ],
+  "Education": [
+    {
+      "School Name": "University College London",
+      "Degree Name": "MSc",
+      "Field Of Study": "Computer Science",
+      "Started On": "2017",
+      "Finished On": "2018"
+    },
+    {
+      "School Name": "University of Warwick",
+      "Degree Name": "BSc",
+      "Field Of Study": "Computer Science",
+      "Started On": "2014",
+      "Finished On": "2017"
+    }
+  ],
+  "Skills": [
+    {"Name": "Python"},
+    {"Name": "Django"},
+    {"Name": "React.js"},
+    {"Name": "PostgreSQL"},
+    {"Name": "AWS"},
+    {"Name": "Docker"},
+    {"Name": "Kubernetes"},
+    {"Name": "Microservices"},
+    {"Name": "REST APIs"},
+    {"Name": "GraphQL"},
+    {"Name": "Redis"},
+    {"Name": "Apache Kafka"},
+    {"Name": "Celery"},
+    {"Name": "TypeScript"},
+    {"Name": "Node.js"},
+    {"Name": "Git"},
+    {"Name": "CI/CD"},
+    {"Name": "Test-Driven Development"},
+    {"Name": "Payment Systems"},
+    {"Name": "Financial Technology"},
+    {"Name": "Agile Methodologies"},
+    {"Name": "System Design"},
+    {"Name": "Elasticsearch"},
+    {"Name": "RabbitMQ"}
+  ],
+  "Certifications": [
+    {"Name": "AWS Certified Solutions Architect - Associate", "Authority": "Amazon Web Services"},
+    {"Name": "Certified Kubernetes Application Developer", "Authority": "Cloud Native Computing Foundation"}
+  ],
+  "Projects": [
+    {
+      "Title": "Open Source Payment Gateway SDK",
+      "Description": "Python SDK for integrating with multiple payment providers. Supports Stripe, PayPal, and Adyen. 2,800 GitHub stars.",
+      "URL": "https://github.com/priyapatel/payment-sdk"
+    },
+    {
+      "Title": "Real-time Transaction Monitor",
+      "Description": "Dashboard for monitoring payment transactions in real-time using React, WebSockets, and D3.js.",
+      "URL": "https://github.com/priyapatel/tx-monitor"
+    }
+  ],
+  "Recommendations": [
+    {
+      "Content": "Priya is one of the most talented engineers I've worked with. Her deep understanding of payment systems and ability to architect scalable solutions is exceptional. She mentored me through complex system design challenges.",
+      "Author": "Sarah Chen",
+      "Relationship": "Managed Priya directly"
+    },
+    {
+      "Content": "Outstanding technical skills combined with excellent communication. Priya led our payment platform migration flawlessly.",
+      "Author": "Michael Roberts",
+      "Relationship": "Worked with Priya on the same team"
+    }
+  ]
+}

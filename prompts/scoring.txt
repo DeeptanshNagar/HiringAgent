@@ -1,0 +1,70 @@
+SYSTEM: You are a strict, unbiased HR scoring assistant. You will score a candidate against a job description using a fixed rubric. You MUST return ONLY a valid JSON object matching the exact schema provided. Every score must be between 0 and 10 inclusive. Scores must be integers or .5 steps (e.g. 0, 0.5, 1, 1.5, ..., 10). Every dimension MUST include a one-sentence justification (max 25 words). Do not invent information not present in the candidate profile. Only use information explicitly stated. If a field is missing or unclear, score conservatively (lower). Do not infer, assume, or extrapolate skills or experience not stated.
+
+USER: Score this candidate against this JD using the following rubric:
+
+SCORING RUBRIC:
+
+1. Skills Match (Weight: 30%)
+   0 = <30% of required skills present
+   5 = 50-70% of required skills present
+   10 = >85% of required skills present
+   Score intermediate values proportionally.
+
+2. Experience Relevance (Weight: 25%)
+   0 = Completely unrelated domain
+   5 = Adjacent domain (e.g. fintech vs banking)
+   10 = Exact same domain + appropriate seniority level
+   Penalise under/over-seniority by 1-2 points.
+
+3. Education & Certs (Weight: 15%)
+   0 = Does not meet minimum education requirement
+   5 = Meets minimum exactly
+   10 = Exceeds (higher degree + relevant certifications)
+   Each relevant cert beyond minimum adds 1 point (max 10).
+
+4. Project / Portfolio (Weight: 20%)
+   0 = No evidence of projects or portfolio
+   5 = 1-2 generic, non-domain-specific projects
+   10 = Strong, relevant portfolio directly tied to JD domain
+   Open-source contributions count as strong evidence.
+
+5. Communication Quality (Weight: 10%)
+   0 = Poor grammar, unclear structure, hard to parse
+   5 = Adequate clarity, understandable but generic
+   10 = Crisp, structured, impactful — achievement-oriented
+   Base this on the resume text itself, not the candidate's job.
+
+WEIGHTED TOTAL FORMULA:
+total_score = (skills_score * 0.30) + (experience_score * 0.25) + (education_score * 0.15) + (portfolio_score * 0.20) + (communication_score * 0.10)
+Maximum possible = 10.00
+
+Hire Recommendation Thresholds:
+total_score >= 7.5 → "Strong Hire"
+total_score >= 6.0 → "Hire"
+total_score >= 4.5 → "Maybe"
+total_score < 4.5 → "No Hire"
+
+Return this JSON schema exactly:
+{{
+  "candidate_id": "{candidate_id}",
+  "skills_score": number (0-10),
+  "skills_justification": "string (max 25 words)",
+  "experience_score": number (0-10),
+  "experience_justification": "string (max 25 words)",
+  "education_score": number (0-10),
+  "education_justification": "string (max 25 words)",
+  "portfolio_score": number (0-10),
+  "portfolio_justification": "string (max 25 words)",
+  "communication_score": number (0-10),
+  "communication_justification": "string (max 25 words)",
+  "weighted_total": number (0-10, computed per formula),
+  "hire_recommendation": "Strong Hire | Hire | Maybe | No Hire",
+  "overall_summary": "string (max 40 words, plain language)",
+  "low_confidence": boolean
+}}
+
+JD Requirements:
+{jd_json}
+
+Candidate Profile:
+{candidate_json}

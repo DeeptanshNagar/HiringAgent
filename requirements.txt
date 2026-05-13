@@ -1,0 +1,53 @@
+# Core Framework
+streamlit>=1.40.0
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-anthropic>=0.3.0
+langchain-openai>=0.2.0
+
+# LLM & Embeddings
+anthropic>=0.40.0
+openai>=1.55.0
+langchain-groq>=0.1.0
+
+# Resume/Document Parsing
+PyMuPDF>=1.24.0
+pdfplumber>=0.11.0
+python-docx>=1.1.0
+python-magic>=0.4.27
+
+# Data Validation & Schema
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+
+# Report Generation
+reportlab>=4.2.0
+jinja2>=3.1.0
+
+# Visualization
+plotly>=5.24.0
+
+# Security & Utilities
+python-dotenv>=1.0.0
+requests>=2.32.0
+
+# Caching
+
+# Testing
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+pytest-cov>=5.0.0
+
+# Type Hints
+typing-extensions>=4.12.0
+
+# Observability (optional)
+langsmith>=0.1.0
+
+# HTTP Server (FastAPI)
+fastapi>=0.115.0
+uvicorn>=0.32.0
+slowapi>=0.1.9
+
+# Numerical (for embedding similarity)
+numpy>=1.26.0
